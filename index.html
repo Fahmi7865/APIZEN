@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="APIzen - Transformez vos idées en API élégantes et performantes. Développement d'API sur mesure par Fahmi.">
+    <meta name="keywords" content="API, développement, freelance, solutions industrielles, APIzen">
+    <meta name="author" content="Fahmi - APIzen">
+    <title>APIzen - Vos idées, notre API</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ========== HEADER NAVIGATION ========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="APIZEN noir.png" alt="APIzen" class="nav__logo-img">
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#accueil" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#competences" class="nav__link">Compétences</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#realisations" class="nav__link">Réalisations</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#philosophie" class="nav__link">Philosophie</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#parcours" class="nav__link">Parcours</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__cta">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Bouton de fermeture mobile -->
+                <div class="nav__close" id="nav-close">
+                    <i class="close-icon">✕</i>
+                </div>
+            </div>
+            
+            <!-- Bouton hamburger mobile -->
+            <div class="nav__toggle" id="nav-toggle">
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+                <span class="toggle-bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main">
+        
+        <!-- ========== SECTION HERO ========== -->
+        <section class="hero section" id="accueil">
+            <div class="hero__background">
+                <div class="hero__shape hero__shape-1"></div>
+                <div class="hero__shape hero__shape-2"></div>
+                <div class="hero__shape hero__shape-3"></div>
+            </div>
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            <span class="hero__greeting">Bonjour, je suis Fahmi</span>
+                            <span class="hero__tagline" id="typing-text"></span>
+                            <span class="cursor">|</span>
+                        </h1>
+                        <p class="hero__description">
+                            Du stage a l'entrepreneuriat : j'ai prouve ma capacite a livrer des solutions techniques complexes. 
+                            Aujourd'hui, je transforme vos concepts en <strong>API robustes et elegantes</strong>.
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#realisations" class="btn btn--primary">
+                                Voir mes realisations
+                            </a>
+                            <a href="#contact" class="btn btn--secondary">
+                                Discutons votre projet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll indicator -->
+                <div class="hero__scroll">
+                    <a href="#competences" class="hero__scroll-button">
+                        <span class="hero__scroll-text">Decouvrir</span>
+                        <span class="hero__scroll-arrow">↓</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION COMPÉTENCES ========== -->
+        <section class="competences section" id="competences">
+            <div class="competences__container container">
+                <h2 class="section__title">Mes Compétences</h2>
+                <p class="section__subtitle">Des solutions complètes pour vos besoins API</p>
+                
+                <div class="competences__grid">
+                    <!-- Compétence 1 -->
+                    <div class="competence__card" data-animation="fade-up">
+                        <div class="competence__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                        </div>
+                        <h3 class="competence__title">Developpement API Sur-Mesure</h3>
+                        <p class="competence__description">
+                            Des API personnalisees, de la conception au deploiement. Architecture REST, GraphQL, 
+                            documentation complete et tests automatises.
+                        </p>
+                        <ul class="competence__list">
+                            <li>Design API RESTful</li>
+                            <li>Documentation OpenAPI/Swagger</li>
+                            <li>Tests & CI/CD</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Compétence 2 -->
+                    <div class="competence__card" data-animation="fade-up" data-delay="100">
+                        <div class="competence__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="competence__title">Solutions Industrielles</h3>
+                        <p class="competence__description">
+                            API de calcul couts/temps fabrication - ManufacturIA. Optimisation des processus 
+                            industriels avec analyse en temps reel.
+                        </p>
+                        <ul class="competence__list">
+                            <li>Calcul couts production</li>
+                            <li>Analyse temps fabrication</li>
+                            <li>Integration IoT</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Compétence 3 -->
+                    <div class="competence__card" data-animation="fade-up" data-delay="200">
+                        <div class="competence__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="competence__title">Architecture Cloud & Physique</h3>
+                        <p class="competence__description">
+                            Deploiement flexible selon vos besoins. Solutions cloud natives ou infrastructure 
+                            on-premise avec haute disponibilite.
+                        </p>
+                        <ul class="competence__list">
+                            <li>Cloud AWS/Azure/GCP</li>
+                            <li>Containerisation Docker</li>
+                            <li>Infrastructure on-premise</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Compétence 4 -->
+                    <div class="competence__card" data-animation="fade-up" data-delay="300">
+                        <div class="competence__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6m-9-9h6m6 0h6"/>
+                                <path d="M16.2 7.8l-2.8 2.8m-2.8 2.8l-2.8 2.8m9.6 0l-2.8-2.8m-2.8-2.8L7.8 7.8"/>
+                            </svg>
+                        </div>
+                        <h3 class="competence__title">Maintenance & Evolution</h3>
+                        <p class="competence__description">
+                            Support continu et amelioration de vos API. Monitoring, mises a jour de securite 
+                            et nouvelles fonctionnalites.
+                        </p>
+                        <ul class="competence__list">
+                            <li>Support technique 24/7</li>
+                            <li>Monitoring & alertes</li>
+                            <li>Evolution continue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION RÉALISATIONS ========== -->
+        <section class="realisations section" id="realisations">
+            <div class="realisations__container container">
+                <h2 class="section__title">Mes Réalisations</h2>
+                <p class="section__subtitle">Projets concrets, résultats mesurables</p>
+                
+                <div class="timeline">
+                    <!-- Projet 1 - AVATH -->
+                    <div class="timeline__item" data-animation="fade-up">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__badge">Projet Phare</span>
+                            <h3 class="timeline__title">
+                                Banc de Test Automatise AVATH
+                            </h3>
+                            <div class="timeline__meta">
+                                <span class="timeline__duration">8 semaines</span>
+                                <span class="timeline__status">100% autonome</span>
+                                <span class="timeline__result">Livraison réussie</span>
+                            </div>
+                            <p class="timeline__description">
+                                Conception complete d'un systeme de test automatise pour l'ESAT AVATH, 
+                                de l'electronique a la programmation. Un projet qui a impressionne mon tuteur 
+                                par son ampleur et sa qualite.
+                            </p>
+                            <ul class="timeline__achievements">
+                                <li>Conception electronique complete (KiCad)</li>
+                                <li>Programmation Arduino avec machine a etats</li>
+                                <li>Usinage sur machine HURCO</li>
+                                <li>Reduction significative des risques securite</li>
+                            </ul>
+                            <blockquote class="timeline__quote">
+                                "C'est vraiment toi qui as fait tout ça en 8 semaines ?"
+                                <cite>- Mon tuteur de stage</cite>
+                            </blockquote>
+                            <div class="timeline__tech">
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">KiCad</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Automatisme</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 2 - API Emails -->
+                    <div class="timeline__item" data-animation="fade-up" data-delay="100">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">
+                                API Gestion Emails
+                            </h3>
+                            <div class="timeline__meta">
+                                <span class="timeline__status">Production</span>
+                            </div>
+                            <p class="timeline__description">
+                                Systeme d'envoi d'emails personnalisable avec architecture scalable. 
+                                Templates dynamiques et analytics integres pour suivre les performances.
+                            </p>
+                            <ul class="timeline__achievements">
+                                <li>Architecture scalable multi-tenant</li>
+                                <li>Templates dynamiques avec variables</li>
+                                <li>Analytics et tracking integres</li>
+                                <li>Gestion des rebonds et desinscriptions</li>
+                            </ul>
+                            <div class="timeline__tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">REST API</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projet 3 - ManufacturIA -->
+                    <div class="timeline__item" data-animation="fade-up" data-delay="200">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">
+                                Solutions Manufacturieres - ManufacturIA
+                            </h3>
+                            <div class="timeline__meta">
+                                <span class="timeline__status">Développement</span>
+                            </div>
+                            <p class="timeline__description">
+                                API de calcul de couts de production optimisee pour l'industrie. 
+                                Analyse en temps reel des temps de fabrication et optimisation des processus.
+                            </p>
+                            <ul class="timeline__achievements">
+                                <li>Calcul precis temps/couts fabrication</li>
+                                <li>Optimisation des processus de production</li>
+                                <li>Reduction des erreurs de pricing</li>
+                                <li>Integration avec systemes existants</li>
+                            </ul>
+                            <div class="timeline__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION PHILOSOPHIE ========== -->
+        <section class="philosophie section" id="philosophie">
+            <div class="philosophie__container container">
+                <div class="philosophie__header" data-animation="fade-up">
+                    <h2 class="section__title">Ma Philosophie</h2>
+                    <p class="philosophie__quote">
+                        "Je crois en une technologie qui simplifie, pas qui complexifie"
+                    </p>
+                </div>
+                
+                <div class="philosophie__grid">
+                    <!-- Valeur 1 -->
+                    <div class="philosophie__card" data-animation="fade-up">
+                        <div class="philosophie__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="philosophie__title">Serenite</h3>
+                        <p class="philosophie__description">
+                            Des API simples et bien documentees. Votre equipe doit pouvoir les integrer 
+                            sans friction, avec une documentation claire et des exemples concrets.
+                        </p>
+                    </div>
+                    
+                    <!-- Valeur 2 -->
+                    <div class="philosophie__card" data-animation="fade-up" data-delay="100">
+                        <div class="philosophie__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="philosophie__title">Fiabilite</h3>
+                        <p class="philosophie__description">
+                            Du code robuste et maintenable. Tests automatises, gestion d'erreurs elegante, 
+                            et architecture pensee pour durer dans le temps.
+                        </p>
+                    </div>
+                    
+                    <!-- Valeur 3 -->
+                    <div class="philosophie__card" data-animation="fade-up" data-delay="200">
+                        <div class="philosophie__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="philosophie__title">Innovation</h3>
+                        <p class="philosophie__description">
+                            Des solutions qui anticipent vos besoins. Je propose des architectures modernes 
+                            et evolutives, pretes pour vos futurs developpements.
+                        </p>
+                    </div>
+                    
+                    <!-- Valeur 4 -->
+                    <div class="philosophie__card" data-animation="fade-up" data-delay="300">
+                        <div class="philosophie__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="8.5" cy="7" r="4"/>
+                                <line x1="20" y1="8" x2="20" y2="14"/>
+                                <line x1="23" y1="11" x2="17" y2="11"/>
+                            </svg>
+                        </div>
+                        <h3 class="philosophie__title">Partenariat</h3>
+                        <p class="philosophie__description">
+                            Un accompagnement de A a Z. De la conception a la maintenance, je suis present 
+                            pour faire evoluer vos solutions selon vos besoins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION PARCOURS ========== -->
+        <section class="parcours section" id="parcours">
+            <div class="parcours__container container">
+                <h2 class="section__title">Mon Parcours</h2>
+                <p class="section__subtitle">Une trajectoire guidée par la passion</p>
+                
+                <div class="parcours__timeline">
+                    <!-- Étape 1 -->
+                    <div class="parcours__item" data-animation="fade-up">
+                        <div class="parcours__year">2025</div>
+                        <div class="parcours__content">
+                            <div class="parcours__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="10 8 16 12 10 16 10 8"/>
+                                </svg>
+                            </div>
+                            <h3 class="parcours__title">Lancement APIzen</h3>
+                            <p class="parcours__description">
+                                De freelance a entrepreneur : je construis l'avenir des API francaises. 
+                                Mon objectif est de proposer des solutions API de qualite professionnelle 
+                                accessibles aux PME et startups.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Étape 2 -->
+                    <div class="parcours__item" data-animation="fade-up" data-delay="100">
+                        <div class="parcours__year">2025</div>
+                        <div class="parcours__content">
+                            <div class="parcours__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                            </div>
+                            <h3 class="parcours__title">Stage ESAT AVATH</h3>
+                            <p class="parcours__description">
+                                Banc de test automatise - Preuve de ma capacite a livrer des projets complexes. 
+                                Un defi releve en totale autonomie qui a confirme ma passion pour la conception 
+                                de solutions techniques innovantes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Étape 3 -->
+                    <div class="parcours__item" data-animation="fade-up" data-delay="200">
+                        <div class="parcours__year">2024</div>
+                        <div class="parcours__content">
+                            <div class="parcours__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                </svg>
+                            </div>
+                            <h3 class="parcours__title">BUT Genie Electrique</h3>
+                            <p class="parcours__description">
+                                Specialisation automatisme et informatique industrielle. Formation complete 
+                                alliant theorie et pratique, avec un focus sur les systemes embarques et 
+                                l'automatisation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Étape 4 -->
+                    <div class="parcours__item" data-animation="fade-up" data-delay="300">
+                        <div class="parcours__year">2023</div>
+                        <div class="parcours__content">
+                            <div class="parcours__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="parcours__title">Premiers projets perso</h3>
+                            <p class="parcours__description">
+                                Decouverte de ma passion pour l'electronique et la programmation. 
+                                Premiers pas dans le monde du developpement avec des projets Arduino 
+                                et Raspberry Pi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION CONTACT ========== -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <div class="contact__header" data-animation="fade-up">
+                    <h2 class="section__title">Prêt à donner vie à votre projet API ?</h2>
+                    <p class="section__subtitle">
+                        Discutons de vos besoins et voyons comment je peux vous aider
+                    </p>
+                </div>
+                
+                <div class="contact__content">
+                    <!-- Informations de contact -->
+                    <div class="contact__info" data-animation="fade-up">
+                        <h3 class="contact__info-title">Restons en contact</h3>
+                        
+                        <div class="contact__links">
+                            <a href="mailto:mhemdi.fahmi2022@gmail.com" class="contact__link" aria-label="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <span>mhemdi.fahmi2022@gmail.com</span>
+                            </a>
+                            
+                            <a href="https://www.linkedin.com/in/mhemdi-fahmi/" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            
+                            <div class="contact__link contact__location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>France</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__promise">
+                            <h4>Je vous promets :</h4>
+                            <ul>
+                                <li>Une ecoute attentive de vos besoins</li>
+                                <li>Des solutions techniques adaptees</li>
+                                <li>Un code propre et documente</li>
+                                <li>Un respect des delais</li>
+                                <li>Un partenariat durable</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulaire de contact -->
+                    <div class="contact__form-container" data-animation="fade-up" data-delay="100">
+                        <form class="contact__form" id="contact-form">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Nom complet</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form__input" 
+                                    placeholder="Jean Dupont"
+                                    required
+                                    aria-required="true"
+                                >
+                                <span class="form__error" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form__input" 
+                                    placeholder="jean.dupont@exemple.fr"
+                                    required
+                                    aria-required="true"
+                                >
+                                <span class="form__error" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="company" class="form__label">Entreprise (optionnel)</label>
+                                <input 
+                                    type="text" 
+                                    id="company" 
+                                    name="company" 
+                                    class="form__input" 
+                                    placeholder="Votre entreprise"
+                                >
+                            </div>
+                            
+                            <div class="form__group">
+                                <label for="message" class="form__label">Votre projet</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form__input form__textarea" 
+                                    placeholder="Décrivez-moi votre besoin en quelques lignes..."
+                                    rows="5"
+                                    required
+                                    aria-required="true"
+                                ></textarea>
+                                <span class="form__error" id="message-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--full">
+                                <span class="btn__text">Envoyer mon message</span>
+                                <span class="btn__loader" style="display: none;">
+                                    <svg class="spinner" viewBox="0 0 50 50">
+                                        <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                    </svg>
+                                </span>
+                            </button>
+                            
+                            <div class="form__message" id="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__brand-large">
+                <img src="APIZEN blanc.png" alt="APIzen" class="footer__logo-large">
+                <p class="footer__tagline-large">
+                    Transformez vos idees en API elegantes
+                </p>
+            </div>
+            
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <p class="footer__tagline">
+                        Votre partenaire de confiance pour le developpement d'API professionnelles
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <div class="footer__group">
+                        <h4 class="footer__title">Navigation</h4>
+                        <ul class="footer__list">
+                            <li><a href="#accueil" class="footer__link">Accueil</a></li>
+                            <li><a href="#competences" class="footer__link">Compétences</a></li>
+                            <li><a href="#realisations" class="footer__link">Réalisations</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__group">
+                        <h4 class="footer__title">Légal</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Mentions légales</a></li>
+                            <li><a href="#" class="footer__link">Politique de confidentialité</a></li>
+                            <li><a href="#" class="footer__link">CGV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 APIzen - Developpe avec passion par Fahmi
+                </p>
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/mhemdi-fahmi/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:mhemdi.fahmi2022@gmail.com" class="footer__social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== SCROLL TO TOP BUTTON ========== -->
+    <button class="scroll-top" id="scroll-top" aria-label="Retour en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
