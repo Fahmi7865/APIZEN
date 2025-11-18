@@ -268,7 +268,7 @@ if (contactForm) {
         // Afficher les erreurs si nécessaire
         if (!isNameValid) {
             formInputs.name.style.borderColor = '#ef4444';
-            formErrors.name.textContent = 'Le nom doit contenir au moins 2 caractères';
+            formErrors.name.textContent = 'Le nom doit contenir au moins 2 caracteres';
         }
         
         if (!isEmailValid) {
@@ -278,7 +278,7 @@ if (contactForm) {
         
         if (!isMessageValid) {
             formInputs.message.style.borderColor = '#ef4444';
-            formErrors.message.textContent = 'Le message doit contenir au moins 10 caractères';
+            formErrors.message.textContent = 'Le message doit contenir au moins 10 caracteres';
         }
         
         // Si tout est valide, envoyer le formulaire
@@ -292,39 +292,39 @@ if (contactForm) {
             btnLoader.style.display = 'inline-flex';
             submitBtn.disabled = true;
             
-            // Simuler l'envoi (à remplacer par votre logique d'envoi réelle)
             try {
-                // Remplacer cette simulation par votre appel API
-                await new Promise(resolve => setTimeout(resolve, 2000));
-                
-                // Récupérer les données du formulaire
-                const formData = {
-                    name: formInputs.name.value,
-                    email: formInputs.email.value,
-                    company: formInputs.company.value,
-                    message: formInputs.message.value
-                };
-                
-                console.log('Données du formulaire:', formData);
-                
-                // Afficher le message de succès
-                formMessage.textContent = 'Merci ! Votre message a été envoyé avec succès. Je vous répondrai dans les plus brefs délais.';
-                formMessage.className = 'form__message success';
-                
-                // Réinitialiser le formulaire
-                contactForm.reset();
-                Object.values(formInputs).forEach(input => {
-                    input.style.borderColor = '';
+                // Envoyer via Formspree
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
                 });
                 
-                // Cacher le message après 5 secondes
-                setTimeout(() => {
-                    formMessage.style.display = 'none';
-                }, 5000);
+                if (response.ok) {
+                    // Afficher le message de succès
+                    formMessage.textContent = 'Merci ! Votre message a ete envoye avec succes. Je vous repondrai dans les plus brefs delais.';
+                    formMessage.className = 'form__message success';
+                    
+                    // Réinitialiser le formulaire
+                    contactForm.reset();
+                    Object.values(formInputs).forEach(input => {
+                        input.style.borderColor = '';
+                    });
+                    
+                    // Cacher le message après 5 secondes
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                } else {
+                    throw new Error('Erreur lors de l\'envoi');
+                }
                 
             } catch (error) {
                 // Afficher le message d'erreur
-                formMessage.textContent = 'Oops ! Une erreur est survenue. Veuillez réessayer ou me contacter directement par email.';
+                formMessage.textContent = 'Oops ! Une erreur est survenue. Veuillez reessayer ou me contacter directement par email.';
                 formMessage.className = 'form__message error';
                 
                 console.error('Erreur lors de l\'envoi:', error);
